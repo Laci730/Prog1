@@ -20,7 +20,7 @@ double sloping_cos(double x)
 	return cos(x) + gix(x);
 }
 
-/*int main()
+int main()
 {
 	Point p{ 100, 100 };
 	Simple_window win{ p, 600, 600, "Function graphs" };
@@ -56,4 +56,4 @@ double sloping_cos(double x)
 	win.attach(jx);
 	win.attach(kex);
 	win.wait_for_button();
-}*/
+}
