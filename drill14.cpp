@@ -27,14 +27,14 @@ public:
 	virtual void pvf() = 0;
 };
 
-class D21 : public D2
+class D21 : public B2
 {
 public:
 	std::string a = "string";
 	virtual void vf() override { std::cout << a << std::endl; }
 };
 
-class D22 : public D2
+class D22 : public B2
 {
 public:
 	int b = 23;
@@ -56,7 +56,7 @@ int main()
 	done.vf();
 	done.vf();
 
-	B1& bone_ref {done};
+	B1& bone_ref = done;
 	bone_ref.vf();
 	bone_ref.f();
 
